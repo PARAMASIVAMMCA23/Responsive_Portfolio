@@ -284,5 +284,17 @@
                 alert("Oops! Something went wrong. Please try again later.");
             });
     }
+// JavaScript code for mobile view menu bar
+
+// Get the mobile menu button and the menu itself
+const mobileMenuButton = document.querySelector('.mobile-nav-toggle');
+const mobileMenu = document.querySelector('.navbar-mobile ul');
+
+// Add a click event listener to the mobile menu button
+mobileMenuButton.addEventListener('click', () => {
+  // Toggle the 'active' class on the mobile menu to show/hide it
+  mobileMenu.classList.toggle('active');
+});
+
 
 
