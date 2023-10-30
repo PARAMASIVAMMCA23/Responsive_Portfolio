@@ -848,6 +848,11 @@ section .container {
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #18d26e;
 }
+.portfolio-container .portfolio-wrap{
+  width: 400px;
+  height:350px ;
+  align-items:center;
+}
 
 /*--------------------------------------------------------------
 # Contact
