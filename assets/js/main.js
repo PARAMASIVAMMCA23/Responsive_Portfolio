@@ -141,6 +141,7 @@
   /**
    * Skills animation
    */
+  
   let skilsContent = select('.skills-content');
   if (skilsContent) {
     new Waypoint({
@@ -154,7 +155,24 @@
       }
     })
   }
-  
+//   $(document).ready(function( ){
+//     var waypoint = new Waypoint({
+//           element: document.getElementById('mycontainer'),//Id of container
+//           handler: function(direction) {
+//             ProgressBar();
+//           }
+//     });
+
+//     function ProgressBar(){
+//         jQuery('.skillbar').each(function(){
+//             jQuery(this).find('.skillbar-bar').animate({
+//                 width:jQuery(this).attr('data-percent')
+//             },6000);
+
+//         });
+//     }
+// });
+
   /**
    * Testimonials slider
    */
@@ -251,50 +269,3 @@
   new PureCounter();
 
 })()
-
-    // Initialize EmailJS with your user ID and service ID
-    
-
-    function sendEmail() {
-        // Get form data
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var subject = document.getElementById("subject").value;
-        var message = document.getElementById("message");
-
-        // Prepare email parameters
-        var params = {
-            name: name,
-            email: email,
-            subject: subject,
-            message: message
-        };
-
-        // Send email using EmailJS
-        emailjs.send("service_an1ae2r", "template_6bn5ym7", params,"deSRJCXdLEwOXsGkf")
-            .then(function(response) {
-                // Handle success
-                console.log("Email sent successfully", response);
-                // Show success message to the user
-                alert("Your message has been sent. Thank you!");
-            }, function(error) {
-                // Handle errors
-                console.error("Email send failed", error);
-                // Show error message to the user
-                alert("Oops! Something went wrong. Please try again later.");
-            });
-    }
-// JavaScript code for mobile view menu bar
-
-// Get the mobile menu button and the menu itself
-const mobileMenuButton = document.querySelector('.mobile-nav-toggle');
-const mobileMenu = document.querySelector('.navbar-mobile ul');
-
-// Add a click event listener to the mobile menu button
-mobileMenuButton.addEventListener('click', () => {
-  // Toggle the 'active' class on the mobile menu to show/hide it
-  mobileMenu.classList.toggle('active');
-});
-
-
-
