@@ -154,7 +154,7 @@
       }
     })
   }
-
+  
   /**
    * Testimonials slider
    */
